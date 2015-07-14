@@ -21,7 +21,7 @@ module Glip
     def post(options = {})
       body = {
 		:icon => 'http://www.redmine.org/attachments/download/3462/redmine_fluid_icon.png',
-        :activity => 'Redmine Update',
+        :activity => 'Redmine',
 		:title => 'Something happened on Redmine',
         :body => 'Check Redmine'
       }.merge options
