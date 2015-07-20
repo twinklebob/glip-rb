@@ -13,7 +13,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/twinklebob/glip-rb"
   spec.license       = "MIT"
 
-  spec.files         = ["lib/glip.rb"]
+  spec.files = Dir['lib/   *.rb'] + Dir['bin/*']
+  spec.files += Dir['[A-Z]*'] + Dir['test/**/*']
+  spec.files.reject! { |fn| fn.include? "CVS" }
   spec.require_paths = ["lib"]
 
   spec.add_dependency "httparty"
