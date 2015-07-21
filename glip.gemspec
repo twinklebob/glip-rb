@@ -2,6 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'glip/version'
+require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name          = "glip-rb"
@@ -13,9 +14,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/twinklebob/glip-rb"
   spec.license       = "MIT"
 
-  spec.files = Dir['lib/   *.rb'] + Dir['bin/*']
-  spec.files += Dir['[A-Z]*'] + Dir['test/**/*']
-  spec.files.reject! { |fn| fn.include? "CVS" }
+
+  spec.files = Dir['lib/*.rb'] + Dir['lib/**/*.rb']
   spec.require_paths = ["lib"]
 
   spec.add_dependency "httparty"
