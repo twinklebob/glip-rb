@@ -36,3 +36,7 @@ sure you have switched it **on**, use Room ID provided at that page instead of
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Say thanks
+
+Feel free to buy me a nice cup of tea or something. I accept tips through http://CyberneticDave.tip.me
